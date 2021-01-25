@@ -1,0 +1,109 @@
+$font-size: 1rem;
+$font-color: lch(53 105 40);
+
+html {
+  font-size: $font-size;
+  color: $font-color;
+  background-color: #fff;
+}
+
+#controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  button {
+    width: 150px;
+    margin: 10px;
+  }
+}
+
+.wrapD3Cube {
+  width: 250px;
+  height: 213px;
+  margin: 50px 10px;
+  position: absolute;
+  transform: scale(.75);
+}
+.D3Cube {
+  width: 112px;
+  height: 112px;
+  transform-style: preserve-3d;
+  transform: rotateX(-22deg) rotateY(-38deg) rotateZ(0deg);
+  margin: auto;
+  position: absolute;
+  transition: all 0.5s ease-in-out;
+  &.active {
+    .side {
+      border: 1px solid #000;
+      opacity: .5;
+      background-color: #f00;
+    }
+  }
+}
+
+.layer1 {
+  transform: translateX(138px) translateY(-66px) translateZ(0);
+}
+.layer2 {
+    transform: translateX(69px) translateY(-33px) translateZ(0);
+}
+.layer3 {
+  transform: translateX(0px) translateY(0px) translateZ(0px);
+}
+
+.row1 {
+  transform: translateX(0px) translateY(210px) translateZ(0px);
+}
+.row2 {
+  transform: translateX(0px) translateY(105px) translateZ(0px);
+}
+.row3 {
+  transform: translateX(0px) translateY(0px) translateZ(0px);
+}
+
+.col1 {
+  transform: translateX(0px) translateY(0px) translateZ(0px);
+}
+.col2 {
+  transform: translateX(89px) translateY(26px) translateZ(0);
+}
+.col3 {
+  transform: translateX(178px) translateY(52px) translateZ(0);
+}
+
+.D3Cube > div {
+  position: absolute;
+  transition: all 0.5s ease-in-out;
+  width: 112px;
+  height: 112px;
+  float: left;
+  overflow: hidden;
+  opacity: 0.15;
+}
+.side {
+  border: 1px solid #000;
+}
+.side1 {
+  transform: rotatex(90deg) translateX(0px) translateY(0px) translateZ(56px);
+  background-color: #fff;
+}
+.side2 {
+  transform: rotateY(-90deg) translateX(0px) translateY(0px) translateZ(56px);
+  background-color: #fff;
+}
+.side3 {
+  transform: translateX(0px) translateY(0px) translateZ(56px);
+  background-color: #fff;
+}
+.side4 {
+  transform: rotateY(90deg) translateX(0px) translateY(0px) translateZ(56px);
+  background-color: #fff;
+}
+.side5 {
+  transform: rotateY(180deg) translateX(0px) translateY(0px) translateZ(56px);
+  background-color: #fff;
+}
+.side6 {
+  transform: rotateX(-90deg) translateX(0px) translateY(0px) translateZ(56px);
+  background-color: #fff;
+}

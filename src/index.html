@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Ментальная муха</title>
+    <link rel="stylesheet" href="assets/material.min.css" />
+    <script src="assets/material.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  </head>
+
+  <body>
+    <div id="root" class="mdl-grid">
+      <div id="controls" class="mdl-cell mdl-cell--2-col">
+        <!-- <label
+          class="mdl-switch mdl-js-switch mdl-js-ripple-effect"
+          for="switch-1"
+        >
+          <input type="checkbox" id="switch-1" class="mdl-switch__input" />
+          <span class="mdl-switch__label">5x5x5</span>
+        </label> -->
+      </div>
+      <div class="mdl-cell mdl-cell--2-col">
+        <ul id="list" class="dmdl-cell mdl-list"></ul>
+        <button
+          id="add"
+          class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored"
+        >
+          <i class="material-icons">add</i>
+        </button>
+      </div>
+      <div id="cube" class="mdl-cell mdl-cell--4-col"></div>
+      <div id="log" class="mdl-cell mdl-cell--4-col"></div>
+    </div>
+    <template id="li_tmpl">
+      <li class="mdl-list__item team_item">
+        <span class="mdl-list__item-primary-content">
+          <i class="material-icons mdl-list__item-icon">person</i>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="text" />
+            <label class="mdl-textfield__label" for="sample1">Команда...</label>
+          </div>
+        </span>
+      </li>
+    </template>
+    <template id="cube_tmpl">
+      <div class="D3Cube">
+        <div class="side side1"></div>
+        <div class="side side2"></div>
+        <div class="side side3"></div>
+        <div class="side side4"></div>
+        <div class="side side5"></div>
+        <div class="side side6"></div>
+      </div>
+    </template>
+  </body>
+</html>
