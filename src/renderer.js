@@ -25,13 +25,6 @@
  *  });
  * ```
  */
+
 import Game from "./game";
-
-console.log({ Game });
-// import "./index.css";
-
 const myGame = new Game();
-
-console.log(
-  '👋 This message is being logged by "renderer.js", included via webpack'
-);
